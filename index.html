@@ -1,1139 +1,393 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123da7">
+  <meta name="description" content="Okello James Andanje — Executive Assistant, business support and research professional supporting leaders with inbox, calendar, travel, CRM, logistics, research and executive operations.">
   <title>Okello James Andanje | Executive Assistant & Business Support</title>
-
-  <meta
-    name="description"
-    content="Portfolio of Okello James Andanje — Executive Assistant, Business & Research Support professional based in Nairobi, Kenya."
-  >
-
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
-  <!-- =======================
-       HEADER
-  ======================== -->
-
-  <header class="site-header">
-
-    <nav class="navbar container">
-
-      <a href="#home" class="brand">
+  <header class="site-header" id="siteHeader">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="James Andanje home">
         <span class="brand-mark">JA</span>
-
-        <span class="brand-text">
-          James Andanje
-          <small>Executive Support</small>
-        </span>
+        <span class="brand-copy"><strong>James Andanje</strong><small>Executive Support</small></span>
       </a>
 
-
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
       </button>
 
-
-      <div class="nav-links" id="navLinks">
-
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#support" class="nav-link">Support</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#work" class="nav-link">Work</a>
-        <a href="#writing" class="nav-link">Writing</a>
-        <a href="#skills" class="nav-link">Skills</a>
-
-        <a href="#contact" class="nav-contact">
-          Contact
-        </a>
-
-      </div>
-
-    </nav>
-
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="#about" data-nav>About</a>
+        <a href="#support" data-nav>Support</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#work" data-nav>Work</a>
+        <a href="#writing" data-nav>Writing</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
   </header>
 
-
   <main>
+    <section class="hero section-anchor" id="home">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
 
-    <!-- =======================
-         HERO
-    ======================== -->
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <div class="status-pill"><span class="status-dot"></span>Open to Executive Assistant opportunities</div>
+          <p class="kicker">EXECUTIVE ASSISTANT · BUSINESS & RESEARCH SUPPORT</p>
+          <h1>I keep the details moving, so leaders can focus on the <span>decisions.</span></h1>
+          <p class="hero-lead">Remote executive support across inbox, calendar, travel, CRM, logistics, research, documentation and follow-through — backed by consulting, analytical and communication experience.</p>
 
-    <section class="hero" id="home">
-
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-
-
-      <div class="container hero-grid">
-
-        <div class="hero-content reveal">
-
-          <p class="eyebrow">
-            EXECUTIVE ASSISTANT · BUSINESS & RESEARCH SUPPORT
-          </p>
-
-
-          <h1>
-            Helping leaders stay
-            <span class="gold-text">organized, informed</span>
-            and focused.
-          </h1>
-
-
-          <p class="hero-description">
-            I combine executive support, research, communication,
-            documentation and digital organization to help leaders
-            operate with greater clarity and efficiency.
-          </p>
-
-
-          <div class="rotating-wrapper">
-
-            <span>I bring strength in</span>
-
-            <strong id="rotatingText">
-              Research
-            </strong>
-
+          <div class="hero-rotator" aria-live="polite">
+            <span>Focused support for</span>
+            <strong id="rotatingText">Inbox & correspondence</strong>
           </div>
 
-
-          <div class="hero-buttons">
-
-            <a href="#experience" class="btn btn-primary">
-              View My Experience
-            </a>
-
-            <a href="#contact" class="btn btn-outline">
-              Contact Me
-            </a>
-
+          <div class="hero-actions">
+            <a class="button button-primary" href="#experience">Explore my experience <span>↘</span></a>
+            <a class="button button-secondary" href="mailto:okelloandanje@gmail.com">Email me</a>
           </div>
 
-
-          <div class="hero-contact-mini">
-
+          <div class="hero-meta">
             <span>Nairobi, Kenya</span>
-            <span class="separator">•</span>
-            <a href="mailto:okelloandanje@gmail.com">
-              okelloandanje@gmail.com
-            </a>
-
+            <span class="meta-dot">•</span>
+            <span>Supporting a NYC-based client</span>
+            <span class="meta-dot">•</span>
+            <span>Cross-time-zone operations</span>
           </div>
-
         </div>
 
-
-        <div class="hero-card reveal">
-
-          <div class="hero-card-top">
-
-            <span class="availability-dot"></span>
-            Open to Executive Assistant opportunities
-
+        <div class="hero-visual reveal" id="heroVisual">
+          <div class="visual-card visual-main">
+            <div class="visual-topline">
+              <span class="eyebrow-label">EXECUTIVE OPERATIONS</span>
+              <span class="live-chip"><i></i> Active</span>
+            </div>
+            <div class="monogram-wrap">
+              <div class="monogram-ring ring-a"></div>
+              <div class="monogram-ring ring-b"></div>
+              <div class="monogram">JA</div>
+              <span class="orbit-tag orbit-one">Calendar</span>
+              <span class="orbit-tag orbit-two">Travel</span>
+              <span class="orbit-tag orbit-three">CRM</span>
+              <span class="orbit-tag orbit-four">Inbox</span>
+            </div>
+            <div class="visual-name">
+              <h2>Okello James Andanje</h2>
+              <p>Executive Assistant · Business & Research Support</p>
+            </div>
           </div>
 
-
-          <div class="profile-monogram">
-            JA
+          <div class="floating-card floating-a">
+            <small>TOOLKIT</small>
+            <strong>HubSpot · Clay</strong>
           </div>
-
-
-          <h2>Okello James Andanje</h2>
-
-          <p>
-            Executive Assistant
-            <br>
-            Business & Research Support
-          </p>
-
-
-          <div class="mini-skills">
-
-            <span>Research</span>
-            <span>Documentation</span>
-            <span>Communication</span>
-            <span>Digital Workflows</span>
-
+          <div class="floating-card floating-b">
+            <small>WORKING STYLE</small>
+            <strong>Proactive · Detail-led</strong>
           </div>
-
-
-          <a href="#contact" class="card-link">
-            Let's connect
-            <span>→</span>
-          </a>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         STATS
-    ======================== -->
-
-    <section class="stats-section">
-
-      <div class="container stats-grid">
-
-        <div class="stat reveal">
-          <strong
-            class="counter"
-            data-target="100"
-            data-suffix="+"
-          >
-            0
-          </strong>
-
+    <section class="signal-strip" aria-label="Professional highlights">
+      <div class="shell signal-grid">
+        <article class="signal reveal">
+          <strong>Sep 2025</strong>
+          <span>Freelance EA work began</span>
+        </article>
+        <article class="signal reveal">
+          <strong class="counter" data-target="100" data-suffix="+">0</strong>
           <span>Published creative works</span>
-        </div>
-
-
-        <div class="stat reveal">
-          <strong>2020</strong>
-          <span>Writing journey began</span>
-        </div>
-
-
-        <div class="stat reveal">
-          <strong>4+</strong>
-          <span>Professional environments</span>
-        </div>
-
-
-        <div class="stat reveal">
+        </article>
+        <article class="signal reveal">
+          <strong>NYC ↔ NBO</strong>
+          <span>Cross-time-zone support</span>
+        </article>
+        <article class="signal reveal">
           <strong>BSc</strong>
           <span>Statistics & Programming</span>
-        </div>
-
+        </article>
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         ABOUT
-    ======================== -->
-
-    <section class="section" id="about">
-
-      <div class="container split-layout">
-
-        <div class="section-heading reveal">
-
-          <p class="eyebrow">ABOUT ME</p>
-
-          <h2>
-            Executive support with
-            <span class="gold-text">business context.</span>
-          </h2>
-
+    <section class="section section-anchor" id="about">
+      <div class="shell about-grid">
+        <div class="section-title reveal">
+          <p class="kicker">ABOUT ME</p>
+          <h2>Executive support with <span>business context.</span></h2>
         </div>
 
+        <div class="about-copy reveal">
+          <p class="lead">I am an Executive Assistant and business support professional who combines day-to-day executive operations with research, communication, documentation and technology-enabled organization.</p>
+          <p>Since September 2025, I have worked as a freelance Executive Assistant supporting a client in New York City. My work includes email and inbox management, calendar coordination, travel planning, CRM administration using HubSpot and Clay, meeting support, research, follow-ups and logistics coordination.</p>
+          <p>Before and alongside that work, I built experience in consulting, business research, reporting, presentations, stakeholder support, data and digital workflows. That background helps me understand not only what needs to be done, but the business context around the work.</p>
 
-        <div class="about-content reveal">
-
-          <p class="lead">
-            I am an Executive Assistant and Business Support professional
-            with experience spanning research, consulting, administration,
-            stakeholder communication, reporting, presentations, training
-            and technology-enabled workflows.
-          </p>
-
-
-          <p>
-            My background allows me to support more than the administrative
-            side of work. I am comfortable researching unfamiliar topics,
-            organizing complex information, preparing structured reports
-            and presentations, supporting professional stakeholders and
-            turning information into something decision-makers can use.
-          </p>
-
-
-          <p>
-            I bring curiosity, adaptability and a continuous-learning
-            mindset to executive support. My goal is to become the
-            organized, thoughtful and technology-enabled professional
-            behind effective executive operations.
-          </p>
-
-
-          <div class="about-values">
-
-            <div>
-              <span>01</span>
-              <strong>Organized</strong>
-            </div>
-
-            <div>
-              <span>02</span>
-              <strong>Analytical</strong>
-            </div>
-
-            <div>
-              <span>03</span>
-              <strong>Adaptable</strong>
-            </div>
-
-            <div>
-              <span>04</span>
-              <strong>Detail-oriented</strong>
-            </div>
-
+          <div class="principle-grid">
+            <div><span>01</span><strong>Anticipate</strong><p>Spot what is likely to be needed before it becomes urgent.</p></div>
+            <div><span>02</span><strong>Organize</strong><p>Keep priorities, information and follow-ups visible and structured.</p></div>
+            <div><span>03</span><strong>Communicate</strong><p>Turn information into clear, useful updates and next steps.</p></div>
+            <div><span>04</span><strong>Adapt</strong><p>Stay effective when priorities, schedules and contexts change.</p></div>
           </div>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         SUPPORT
-    ======================== -->
-
-    <section class="section section-soft" id="support">
-
-      <div class="container">
-
-        <div class="section-intro reveal">
-
-          <p class="eyebrow">HOW I CAN SUPPORT</p>
-
-          <h2>
-            Practical support that helps
-            <span class="gold-text">work move forward.</span>
-          </h2>
-
-          <p>
-            My strongest capabilities sit at the intersection of executive
-            support, research, communication and information management.
-          </p>
-
+    <section class="section section-soft section-anchor" id="support">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="kicker">EXECUTIVE SUPPORT</p>
+          <h2>Support that protects <span>time, attention and momentum.</span></h2>
+          <p>I support the operational details around an executive so that priorities stay organized, communication keeps moving and nothing important disappears between meetings.</p>
         </div>
 
-
-        <div class="support-grid">
-
-          <article class="support-card reveal">
-
-            <span class="card-number">01</span>
-
-            <h3>Executive Information Support</h3>
-
-            <p>
-              Researching and organizing information so leaders can quickly
-              understand the context behind meetings, opportunities and
-              business decisions.
-            </p>
-
-            <ul>
-              <li>Briefing preparation</li>
-              <li>Research summaries</li>
-              <li>Information organization</li>
-            </ul>
-
+        <div class="service-grid">
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">01</span>
+            <h3>Inbox & Correspondence</h3>
+            <p>Organizing email, identifying priorities, supporting responses and keeping outstanding conversations moving.</p>
+            <ul><li>Email triage</li><li>Draft support</li><li>Follow-up tracking</li></ul>
           </article>
-
-
-          <article class="support-card reveal">
-
-            <span class="card-number">02</span>
-
-            <h3>Research & Business Support</h3>
-
-            <p>
-              Conducting company, market, industry and strategic research
-              and converting findings into useful business information.
-            </p>
-
-            <ul>
-              <li>Company research</li>
-              <li>Market research</li>
-              <li>Competitor research</li>
-            </ul>
-
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">02</span>
+            <h3>Calendar & Scheduling</h3>
+            <p>Coordinating meetings across schedules and time zones while protecting focus time and reducing conflicts.</p>
+            <ul><li>Calendar coordination</li><li>Meeting scheduling</li><li>Time-zone management</li></ul>
           </article>
-
-
-          <article class="support-card reveal">
-
-            <span class="card-number">03</span>
-
-            <h3>Reports & Presentations</h3>
-
-            <p>
-              Developing structured reports, business documents and
-              presentations for professional and executive audiences.
-            </p>
-
-            <ul>
-              <li>Report preparation</li>
-              <li>Presentation development</li>
-              <li>Professional documentation</li>
-            </ul>
-
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">03</span>
+            <h3>Travel & Logistics</h3>
+            <p>Coordinating travel details and logistics so plans are clear, practical and easy to execute.</p>
+            <ul><li>Flight & hotel research</li><li>Itinerary organization</li><li>Logistics coordination</li></ul>
           </article>
-
-
-          <article class="support-card reveal">
-
-            <span class="card-number">04</span>
-
-            <h3>Administrative Support</h3>
-
-            <p>
-              Supporting accurate documentation, digital records,
-              administrative coordination and structured information
-              management.
-            </p>
-
-            <ul>
-              <li>Document management</li>
-              <li>Digital filing</li>
-              <li>Record organization</li>
-            </ul>
-
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">04</span>
+            <h3>CRM & Relationship Support</h3>
+            <p>Keeping relationship information accurate and actionable across HubSpot, Clay and related workflows.</p>
+            <ul><li>HubSpot</li><li>Clay</li><li>Contact & follow-up hygiene</li></ul>
           </article>
-
-
-          <article class="support-card reveal">
-
-            <span class="card-number">05</span>
-
-            <h3>Stakeholder Support</h3>
-
-            <p>
-              Communicating professionally with clients, participants,
-              colleagues and stakeholders across research, consulting and
-              training environments.
-            </p>
-
-            <ul>
-              <li>Professional communication</li>
-              <li>Workshop support</li>
-              <li>Follow-up coordination</li>
-            </ul>
-
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">05</span>
+            <h3>Research & Briefings</h3>
+            <p>Researching companies, people, markets and business topics and converting findings into concise executive-ready context.</p>
+            <ul><li>Company research</li><li>Meeting briefs</li><li>Information synthesis</li></ul>
           </article>
-
-
-          <article class="support-card reveal">
-
-            <span class="card-number">06</span>
-
-            <h3>Digital Organization</h3>
-
-            <p>
-              Using modern productivity and reporting tools to organize
-              information and improve access to business records and
-              workflows.
-            </p>
-
-            <ul>
-              <li>Digital forms</li>
-              <li>Information workflows</li>
-              <li>Business reporting</li>
-            </ul>
-
+          <article class="service-card tilt-card reveal">
+            <span class="service-num">06</span>
+            <h3>Meetings & Follow-through</h3>
+            <p>Supporting preparation, notes, action items and coordination so decisions translate into next steps.</p>
+            <ul><li>Meeting preparation</li><li>Action tracking</li><li>Stakeholder coordination</li></ul>
           </article>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         EXPERIENCE
-    ======================== -->
-
-    <section class="section" id="experience">
-
-      <div class="container">
-
-        <div class="section-intro reveal">
-
-          <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
-
-          <h2>
-            Experience across
-            <span class="gold-text">
-              research, business and administration.
-            </span>
-          </h2>
-
+    <section class="section section-anchor" id="experience">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="kicker">EXPERIENCE</p>
+          <h2>A career built across <span>executive support, research and operations.</span></h2>
         </div>
-
 
         <div class="timeline">
-
           <article class="timeline-item reveal">
-
-            <div class="timeline-date">
-              AUG 2024 — PRESENT
+            <div class="timeline-date"><strong>SEP 2025 — PRESENT</strong><span>Remote · NYC client</span></div>
+            <div class="timeline-body">
+              <div class="timeline-header"><div><p class="role-type">FREELANCE</p><h3>Executive Assistant</h3></div><span class="role-badge">Current</span></div>
+              <p>Providing confidential executive support to a New York City-based client across email, calendar, travel, meeting coordination, research, CRM administration, logistics and follow-through.</p>
+              <div class="tag-row"><span>Inbox</span><span>Calendar</span><span>Travel</span><span>HubSpot</span><span>Clay</span><span>Research</span><span>Logistics</span></div>
             </div>
-
-            <div class="timeline-content">
-
-              <span class="timeline-company">
-                Enreal Limited
-              </span>
-
-              <h3>
-                Research & Assistant Consultant / Data Analyst
-              </h3>
-
-              <p>
-                Supporting research and consulting assignments through
-                company and market research, business analysis,
-                performance monitoring, reporting, presentations,
-                workshops and stakeholder-facing deliverables.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Research</span>
-                <span>Consulting</span>
-                <span>Reporting</span>
-                <span>Presentations</span>
-              </div>
-
-            </div>
-
           </article>
 
-
           <article class="timeline-item reveal">
-
-            <div class="timeline-date">
-              FEB 2024 — AUG 2024
+            <div class="timeline-date"><strong>AUG 2024 — DEC 2025</strong><span>Enreal Limited</span></div>
+            <div class="timeline-body">
+              <div class="timeline-header"><div><p class="role-type">CONSULTING & RESEARCH</p><h3>Research & Assistant Consultant / Data Analyst</h3></div></div>
+              <p>Supported consulting assignments through company and market research, business analysis, KPI monitoring, reports, executive-level presentations, workshops, strategic recommendations and stakeholder-facing deliverables.</p>
+              <div class="tag-row"><span>Research</span><span>Consulting</span><span>Reporting</span><span>Presentations</span><span>Stakeholders</span></div>
             </div>
-
-            <div class="timeline-content">
-
-              <span class="timeline-company">
-                Enreal Limited
-              </span>
-
-              <h3>Data Analyst Intern</h3>
-
-              <p>
-                Supported information management, business research,
-                reporting, documentation and analysis in a professional
-                consulting environment.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Information Management</span>
-                <span>Documentation</span>
-                <span>Business Analysis</span>
-              </div>
-
-            </div>
-
           </article>
 
-
           <article class="timeline-item reveal">
-
-            <div class="timeline-date">
-              JUN 2023 — FEB 2024
+            <div class="timeline-date"><strong>FEB 2024 — AUG 2024</strong><span>Enreal Limited</span></div>
+            <div class="timeline-body">
+              <div class="timeline-header"><div><p class="role-type">EARLY CAREER</p><h3>Data Analyst Intern</h3></div></div>
+              <p>Supported business research, information management, reporting, documentation and structured analysis in a professional consulting environment.</p>
+              <div class="tag-row"><span>Information Management</span><span>Documentation</span><span>Business Analysis</span></div>
             </div>
-
-            <div class="timeline-content">
-
-              <span class="timeline-company">
-                Client Service & Administration
-              </span>
-
-              <h3>Cyber Attendant</h3>
-
-              <p>
-                Supported clients with digital services, electronic
-                documentation, document processing, printing, scanning
-                and basic technical troubleshooting while managing
-                multiple requests accurately.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Client Support</span>
-                <span>Administration</span>
-                <span>Documentation</span>
-              </div>
-
-            </div>
-
           </article>
 
-
           <article class="timeline-item reveal">
-
-            <div class="timeline-date">
-              EARLIER EXPERIENCE
+            <div class="timeline-date"><strong>JUN 2023 — FEB 2024</strong><span>Client service</span></div>
+            <div class="timeline-body">
+              <div class="timeline-header"><div><p class="role-type">ADMINISTRATION</p><h3>Cyber Attendant</h3></div></div>
+              <p>Handled client-facing digital services, document processing, printing, scanning, electronic documentation and basic technical troubleshooting while managing multiple requests accurately.</p>
+              <div class="tag-row"><span>Client Support</span><span>Administration</span><span>Documentation</span></div>
             </div>
-
-            <div class="timeline-content">
-
-              <span class="timeline-company">
-                AVSI–AESA
-              </span>
-
-              <h3>Data Entry Officer & Life Skills Trainer</h3>
-
-              <p>
-                Supported data entry, information management,
-                verification, workshops, communication and participant
-                training in a stakeholder-focused environment.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Data Entry</span>
-                <span>Training</span>
-                <span>Workshops</span>
-                <span>Communication</span>
-              </div>
-
-            </div>
-
           </article>
 
+          <article class="timeline-item reveal">
+            <div class="timeline-date"><strong>EARLIER EXPERIENCE</strong><span>AVSI–AESA</span></div>
+            <div class="timeline-body">
+              <div class="timeline-header"><div><p class="role-type">DATA & TRAINING</p><h3>Data Entry Officer & Life Skills Trainer</h3></div></div>
+              <p>Supported data entry, information verification, document handling, workshops, training and participant communication in a stakeholder-focused environment.</p>
+              <div class="tag-row"><span>Data Entry</span><span>Training</span><span>Workshops</span><span>Communication</span></div>
+            </div>
+          </article>
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         SELECTED WORK
-    ======================== -->
-
-    <section class="section section-blue" id="work">
-
-      <div class="container">
-
-        <div class="section-intro section-intro-light reveal">
-
-          <p class="eyebrow eyebrow-gold">
-            SELECTED PROFESSIONAL WORK
-          </p>
-
-          <h2>
-            Work that demonstrates
-            <span class="gold-text">
-              how I think and contribute.
-            </span>
-          </h2>
-
+    <section class="section section-blue section-anchor" id="work">
+      <div class="shell">
+        <div class="section-heading light reveal">
+          <p class="kicker kicker-gold">SELECTED WORK</p>
+          <h2>Evidence of how I <span>think, organize and contribute.</span></h2>
+          <p>Use the filters to explore selected areas of work. Open any card for more detail.</p>
         </div>
 
-
-        <div class="filter-buttons reveal">
-
-          <button class="filter-btn active" data-filter="all">
-            All
-          </button>
-
-          <button class="filter-btn" data-filter="research">
-            Research
-          </button>
-
-          <button class="filter-btn" data-filter="presentation">
-            Presentations
-          </button>
-
-          <button class="filter-btn" data-filter="workflow">
-            Digital Workflows
-          </button>
-
-          <button class="filter-btn" data-filter="writing">
-            Writing
-          </button>
-
+        <div class="filter-row reveal" role="group" aria-label="Filter selected work">
+          <button class="filter-button active" data-filter="all" type="button">All</button>
+          <button class="filter-button" data-filter="ea" type="button">Executive Operations</button>
+          <button class="filter-button" data-filter="research" type="button">Research</button>
+          <button class="filter-button" data-filter="presentation" type="button">Presentations</button>
+          <button class="filter-button" data-filter="workflow" type="button">Digital Workflow</button>
+          <button class="filter-button" data-filter="writing" type="button">Writing</button>
         </div>
 
-
-        <div class="projects-grid">
-
-          <article
-            class="project-card reveal"
-            data-category="research"
-          >
-
-            <span class="project-label">
-              Research
-            </span>
-
-            <h3>
-              Strategic Research & Consulting
-            </h3>
-
-            <p>
-              Research and consulting support involving market
-              information, business analysis, strategic scenarios,
-              recommendations and stakeholder reporting.
-            </p>
-
-            <div class="project-bottom">
-              <span>Business Support</span>
-              <span>01</span>
-            </div>
-
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="ea" tabindex="0" data-project="ea">
+            <div class="project-top"><span>Executive Operations</span><b>01</b></div>
+            <h3>Remote EA Support · NYC</h3>
+            <p>Cross-time-zone executive support spanning inbox, calendar, travel, CRM, research, meetings and logistics.</p>
+            <button type="button" class="text-link" data-open-project="ea">View details <span>↗</span></button>
           </article>
-
-
-          <article
-            class="project-card reveal"
-            data-category="presentation"
-          >
-
-            <span class="project-label">
-              Presentations
-            </span>
-
-            <h3>
-              Executive-Level Presentations
-            </h3>
-
-            <p>
-              Development of professional materials covering strategy,
-              innovation, quality assurance, business management and
-              strategic opportunities for senior audiences.
-            </p>
-
-            <div class="project-bottom">
-              <span>Executive Communication</span>
-              <span>02</span>
-            </div>
-
+          <article class="project-card reveal" data-category="research" tabindex="0" data-project="research">
+            <div class="project-top"><span>Research</span><b>02</b></div>
+            <h3>Strategic Research & Consulting</h3>
+            <p>Company, market and business research translated into structured analysis, scenarios and recommendations.</p>
+            <button type="button" class="text-link" data-open-project="research">View details <span>↗</span></button>
           </article>
-
-
-          <article
-            class="project-card reveal"
-            data-category="workflow"
-          >
-
-            <span class="project-label">
-              Digital Workflow
-            </span>
-
-            <h3>
-              Information Management Workflow
-            </h3>
-
-            <p>
-              Designed technology-enabled processes connecting digital
-              forms, Google Drive, data processing and reporting to
-              improve information accessibility and organization.
-            </p>
-
-            <div class="project-bottom">
-              <span>Digital Organization</span>
-              <span>03</span>
-            </div>
-
+          <article class="project-card reveal" data-category="presentation" tabindex="0" data-project="presentation">
+            <div class="project-top"><span>Presentation</span><b>03</b></div>
+            <h3>Executive-Level Presentations</h3>
+            <p>Professional content on strategy, innovation, quality assurance and doing business in Africa for senior audiences.</p>
+            <button type="button" class="text-link" data-open-project="presentation">View details <span>↗</span></button>
           </article>
-
-
-          <article
-            class="project-card reveal"
-            data-category="presentation"
-          >
-
-            <span class="project-label">
-              Training
-            </span>
-
-            <h3>
-              Training & Facilitation
-            </h3>
-
-            <p>
-              Experience preparing and supporting professional workshops,
-              training materials, presentations and participant-facing
-              communication.
-            </p>
-
-            <div class="project-bottom">
-              <span>Communication</span>
-              <span>04</span>
-            </div>
-
+          <article class="project-card reveal" data-category="workflow" tabindex="0" data-project="workflow">
+            <div class="project-top"><span>Digital Workflow</span><b>04</b></div>
+            <h3>Information Management Workflow</h3>
+            <p>A structured flow connecting digital forms, Google Drive, data processing and reporting.</p>
+            <button type="button" class="text-link" data-open-project="workflow">View details <span>↗</span></button>
           </article>
-
-
-          <article
-            class="project-card reveal"
-            data-category="writing"
-          >
-
-            <span class="project-label">
-              Writing
-            </span>
-
-            <h3>
-              100+ Published Creative Works
-            </h3>
-
-            <p>
-              A writing journey spanning poetry, short stories,
-              storytelling and creative communication since 2020,
-              strengthening my ability to communicate ideas clearly.
-            </p>
-
-            <div class="project-bottom">
-              <span>Written Communication</span>
-              <span>05</span>
-            </div>
-
+          <article class="project-card reveal" data-category="writing" tabindex="0" data-project="writing">
+            <div class="project-top"><span>Writing</span><b>05</b></div>
+            <h3>100+ Published Creative Works</h3>
+            <p>Poetry, short stories and creative writing since 2020 — a long-term practice in clarity, voice and storytelling.</p>
+            <button type="button" class="text-link" data-open-project="writing">View details <span>↗</span></button>
           </article>
-
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         WRITING
-    ======================== -->
-
-    <section class="section writing-section" id="writing">
-
-      <div class="container writing-grid">
-
-        <div class="writing-number reveal">
-          100<span>+</span>
+    <section class="section section-anchor" id="writing">
+      <div class="shell writing-grid">
+        <div class="writing-stat reveal"><span class="counter" data-target="100" data-suffix="+">0</span><small>published works</small></div>
+        <div class="writing-copy reveal">
+          <p class="kicker">WRITING & COMMUNICATION</p>
+          <h2>Writing has trained me to <span>notice, structure and communicate.</span></h2>
+          <p>I have been writing since 2020, with more than 100 published pieces across poetry, short stories and creative writing. That practice strengthens the same skills I use in executive support: clear communication, audience awareness, editing, information structure and attention to nuance.</p>
+          <div class="tag-row tag-row-light"><span>Creative Writing</span><span>Storytelling</span><span>Editing</span><span>Business Writing</span><span>Presentations</span></div>
+          <p class="writing-note">Writing portfolio: <strong>Andanje Jamie Poet</strong> — link can be added once the final URL is provided.</p>
         </div>
-
-
-        <div class="writing-content reveal">
-
-          <p class="eyebrow">
-            WRITING & COMMUNICATION
-          </p>
-
-          <h2>
-            Writing has shaped the way
-            <span class="gold-text">I communicate.</span>
-          </h2>
-
-          <p>
-            I have been writing since 2020 and have published more than
-            100 pieces across poetry, short stories and creative writing.
-          </p>
-
-          <p>
-            That experience has strengthened my ability to structure
-            ideas, communicate clearly, understand audiences and turn
-            information into compelling written narratives.
-          </p>
-
-
-          <div class="writing-tags">
-            <span>Creative Writing</span>
-            <span>Storytelling</span>
-            <span>Editing</span>
-            <span>Business Writing</span>
-            <span>Presentations</span>
-          </div>
-
-        </div>
-
       </div>
-
     </section>
-
-
-
-    <!-- =======================
-         SKILLS
-    ======================== -->
 
     <section class="section section-soft" id="skills">
-
-      <div class="container">
-
-        <div class="section-intro reveal">
-
-          <p class="eyebrow">
-            SKILLS & TOOLS
-          </p>
-
-          <h2>
-            Professional fundamentals,
-            strengthened by
-            <span class="gold-text">technology.</span>
-          </h2>
-
+      <div class="shell">
+        <div class="section-heading reveal">
+          <p class="kicker">TOOLS & STRENGTHS</p>
+          <h2>Professional fundamentals, <span>amplified by technology.</span></h2>
         </div>
 
-
-        <div class="skills-layout">
-
-          <div class="skills-column reveal">
-
-            <h3>Professional Strengths</h3>
-
-            <div class="skill-list">
-
-              <span>Organization</span>
-              <span>Research</span>
-              <span>Communication</span>
-              <span>Analytical Thinking</span>
-              <span>Attention to Detail</span>
-              <span>Adaptability</span>
-              <span>Information Management</span>
-              <span>Presentation Development</span>
-              <span>Stakeholder Support</span>
-              <span>Continuous Learning</span>
-
-            </div>
-
+        <div class="tools-grid">
+          <div class="tool-panel reveal">
+            <p class="panel-label">Executive & Productivity</p>
+            <div class="tool-cloud"><span>Google Workspace</span><span>Microsoft Word</span><span>Excel</span><span>PowerPoint</span><span>HubSpot</span><span>Clay</span><span>Canva</span><span>JotForm</span><span>Google Drive</span><span>Google Forms</span></div>
           </div>
-
-
-          <div class="skills-column reveal">
-
-            <h3>Business & Productivity Tools</h3>
-
-            <div class="skill-list tools-list">
-
-              <span>Microsoft Word</span>
-              <span>Microsoft Excel</span>
-              <span>PowerPoint</span>
-              <span>Google Sheets</span>
-              <span>Google Drive</span>
-              <span>Google Forms</span>
-              <span>Power BI</span>
-              <span>Power Query</span>
-              <span>Canva</span>
-              <span>JotForm</span>
-
-            </div>
-
+          <div class="tool-panel reveal">
+            <p class="panel-label">Business & Reporting</p>
+            <div class="tool-cloud"><span>Power BI</span><span>Power Query</span><span>Research</span><span>Reporting</span><span>Presentations</span><span>Information Management</span><span>Digital Workflows</span></div>
           </div>
-
         </div>
-
 
         <div class="education-card reveal">
-
-          <div>
-            <p class="eyebrow">
-              EDUCATION
-            </p>
-
-            <h3>
-              Bachelor of Science in Statistics and Programming
-            </h3>
-
-            <p>
-              Kenyatta University · 2018 — 2022
-            </p>
-
-          </div>
-
-
-          <p>
-            A quantitative and analytical academic background that
-            strengthens research, problem-solving, information management
-            and decision-support capabilities.
-          </p>
-
+          <div><p class="kicker kicker-gold">EDUCATION</p><h3>Bachelor of Science in Statistics and Programming</h3><p>Kenyatta University · 2018–2022</p></div>
+          <p>A quantitative and analytical foundation that strengthens research, problem-solving, information management and decision-support capabilities.</p>
         </div>
-
       </div>
-
     </section>
 
-
-
-    <!-- =======================
-         CONTACT
-    ======================== -->
-
-    <section class="contact-section" id="contact">
-
-      <div class="container contact-grid">
-
-        <div class="contact-heading reveal">
-
-          <p class="eyebrow eyebrow-gold">
-            LET'S CONNECT
-          </p>
-
-          <h2>
-            Looking for thoughtful,
-            reliable executive support?
-          </h2>
-
-          <p>
-            I am open to Executive Assistant, Administrative Support,
-            Business Support and Research Support opportunities.
-          </p>
-
+    <section class="contact-section section-anchor" id="contact">
+      <div class="shell contact-grid">
+        <div class="contact-copy reveal">
+          <p class="kicker kicker-gold">LET'S CONNECT</p>
+          <h2>Need someone who can keep the details <span>under control?</span></h2>
+          <p>I am open to Executive Assistant, executive operations, administrative support, business support and research support opportunities.</p>
+          <div class="contact-actions">
+            <a class="button button-gold" href="mailto:okelloandanje@gmail.com">Email me</a>
+            <a class="button button-ghost" href="https://wa.me/254795174075" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
         </div>
 
+        <div class="contact-panel reveal">
+          <div class="contact-profile"><div class="contact-avatar">JA</div><div><h3>Okello James Andanje</h3><p>Executive Assistant · Business & Research Support</p></div></div>
 
-        <div class="contact-card reveal">
-
-          <div class="contact-person">
-
-            <span class="contact-avatar">
-              JA
-            </span>
-
-            <div>
-              <h3>Okello James Andanje</h3>
-              <p>
-                Executive Assistant | Business & Research Support
-              </p>
-            </div>
-
+          <div class="contact-list">
+            <a href="mailto:okelloandanje@gmail.com"><span><small>Email</small><strong>okelloandanje@gmail.com</strong></span><b>↗</b></a>
+            <a href="tel:+254795174075"><span><small>Phone</small><strong>+254 795 174 075</strong></span><b>↗</b></a>
+            <a href="https://wa.me/254795174075" target="_blank" rel="noopener noreferrer"><span><small>WhatsApp</small><strong>Chat directly</strong></span><b>↗</b></a>
+            <a href="https://www.linkedin.com/in/andanje-james-10680522b/" target="_blank" rel="noopener noreferrer"><span><small>LinkedIn</small><strong>Connect with me</strong></span><b>↗</b></a>
           </div>
 
-
-          <div class="contact-links">
-
-            <a
-              href="mailto:okelloandanje@gmail.com"
-              class="contact-link"
-            >
-              <div>
-                <small>Email</small>
-                <strong>okelloandanje@gmail.com</strong>
-              </div>
-
-              <span>→</span>
-            </a>
-
-
-            <a
-              href="tel:+254795174075"
-              class="contact-link"
-            >
-              <div>
-                <small>Phone</small>
-                <strong>+254 795 174 075</strong>
-              </div>
-
-              <span>→</span>
-            </a>
-
-
-            <a
-              href="https://wa.me/254795174075"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-link"
-            >
-              <div>
-                <small>WhatsApp</small>
-                <strong>Chat with me</strong>
-              </div>
-
-              <span>→</span>
-            </a>
-
-
-            <a
-              href="https://www.linkedin.com/in/andanje-james-10680522b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-link"
-            >
-              <div>
-                <small>LinkedIn</small>
-                <strong>Connect on LinkedIn</strong>
-              </div>
-
-              <span>→</span>
-            </a>
-
+          <div class="copy-row">
+            <button type="button" class="copy-button" data-copy="okelloandanje@gmail.com">Copy email</button>
+            <button type="button" class="copy-button" data-copy="+254795174075">Copy phone</button>
           </div>
-
         </div>
-
       </div>
-
     </section>
-
   </main>
 
-
-
-  <!-- =======================
-       FOOTER
-  ======================== -->
-
   <footer>
-
-    <div class="container footer-content">
-
-      <div>
-        <strong>James Andanje</strong>
-
-        <p>
-          Executive Assistant · Business & Research Support
-        </p>
-      </div>
-
-
-      <p>
-        © <span id="currentYear"></span>
-        Okello James Andanje.
-      </p>
-
+    <div class="shell footer-grid">
+      <div><strong>James Andanje</strong><p>Executive Assistant · Business & Research Support</p></div>
+      <p>© <span id="currentYear"></span> Okello James Andanje</p>
     </div>
-
   </footer>
 
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
 
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-card" role="document">
+      <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
+      <p class="kicker" id="modalKicker">Selected work</p>
+      <h3 id="modalTitle">Project title</h3>
+      <p id="modalBody">Project details</p>
+      <div class="tag-row" id="modalTags"></div>
+    </div>
+  </div>
 
-  <button
-    class="back-to-top"
-    id="backToTop"
-    aria-label="Back to top"
-  >
-    ↑
-  </button>
-
-
-  <script src="script.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
