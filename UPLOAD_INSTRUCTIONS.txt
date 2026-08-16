@@ -1,0 +1,29 @@
+JAMES ANDANJE PORTFOLIO - UPLOAD GUIDE
+
+FILES TO UPLOAD TO YOUR GITHUB REPOSITORY:
+
+1. index.html
+2. style.css
+3. script.js
+4. netlify.toml
+5. README.md
+
+HOW TO UPDATE YOUR EXISTING REPOSITORY:
+
+1. Open your James-Andanje-Portfolio repository on GitHub.
+2. Click Add file / + and choose Upload files.
+3. Drag the five files above into GitHub.
+4. GitHub should show index.html, style.css and README.md as replacements.
+5. script.js and netlify.toml may appear as new files if they are not already present.
+6. Use commit message:
+   Rebuild executive assistant portfolio
+7. Commit directly to main.
+
+NETLIFY:
+
+Because Netlify is already connected to your GitHub repository, it should redeploy automatically after the commit.
+
+IMPORTANT:
+
+Do not upload the ZIP file into the website repository.
+Upload the individual files inside it.
